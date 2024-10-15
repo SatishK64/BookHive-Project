@@ -10,9 +10,15 @@ function SplHeader(){
                 <div className="Header_bar">
             
                 <div className="Header-name">BookHive</div>
-                <div className="Header-lend">Lend Books</div>
-                <div className="Header-rent">Rent Books</div>
-                    
+                <button type="button" className="Header-lend">Lend Books</button>
+                <button type="button" className="Header-rent">Rent Books</button>
+                <div className="Header-search">
+                   <div className="Search">
+                        <label id ="label" for="Search">Search</label>
+                        <input className= "Search-Bar"type="text" placeholder="  Book Name"></input>
+                        <button type="button" className="Submit-button">🔎</button>
+                    </div> 
+                </div>
                 </div>
             </header>
         

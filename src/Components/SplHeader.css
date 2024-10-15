@@ -4,31 +4,90 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
-    background-color: #c75; /* Adjust as needed */
+    background-color: rgb(207, 117, 82); /* Adjust as needed */
     border-bottom: 1px solid #ffffff9a; /* Optional */
 }
 
 .Header-name {
     font-size: 2rem;
     font-weight: bold; 
-    padding-right: 800px;
+    padding-right: 50px;
     color: whitesmoke;
 }
 .hyper{
     color: whitesmoke;
     text-decoration: none;
 }
-.Header-lend ,
-.Header-rent {
+.Header-lend  {
+    position: relative;
+    right: 100px;
     text-decoration: none;
     color: whitesmoke; /* Adjust as needed */
     font-size: 1rem;
     background-color: #008585af;
     padding: 15px 35px;
-    border-radius: 24px;
+    border-radius: 14px;
 }
+.Header-rent{
+    position: relative;
+    right: 200px;
+    text-decoration: none;
+    color: whitesmoke; /* Adjust as needed */
+    font-size: 1rem;
+    background-color: #008585af;
+    padding: 15px 35px;
+    border-radius: 14px;
+}
+.Header-search{
+    height: 50px;
+    width: 500px;
+}
+.Search-Bar{
+    height: 35px;
+    width: 185px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 15px;
+    position: relative;
+    bottom: 5px;
+    background-color: #ffffff5f;
+    color: #000000ff;
+    border-color: white;
 
+}
+.Submit-button{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    bottom: 3px;
+    background-color: #f9f9f99f;
+    left: 7px;
+}
+.Submit-button:hover{
+    background-color: #ffffffff;
+}
+.Search{
+    position: relative;
+    height: 40px;
+    width: 400px;
+    background-color: #31b1b1;
+    padding: 10px 10px;
+    border-radius: 15px;
+    bottom: 5px;
+    background-color: #02020277;
+}
 .Header-lend:hover,
 .Header-rent:hover {
     background-color: #31b1b1; /* Optional */
+}
+
+#label{
+    font-size: 30px;
+    padding-right: 10px;
+    color: white;
+    position: relative;
+    bottom: 3px;
+    text-shadow: #000000ff;
 }
