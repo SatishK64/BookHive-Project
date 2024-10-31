@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffde7; /* Light yellow background */
+  color: #333;
+}
+
+.Back-page {
+  min-height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #fff9c4 0%, #ffecb3 100%); /* Yellow gradient */
+}
+
+.Home-Page {
+  background-color: #ffffff; /* Keeping white for card background */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.Home-Page:hover {
+  transform: translateY(-5px);
+}
+
+.Title h1 {
+  color: #fbc02d; /* Yellow color for title */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.Question h2 {
+  color: #f9a825; /* Darker yellow for questions */
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.Answer {
+  color: #6c757d; /* Gray for answers */
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.hyper {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lend {
+  background-color: #fbc02d; /* Yellow for lend button */
+  color: white;
+}
+
+.lend:hover {
+  background-color: #f9a825; /* Darker yellow on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(251, 192, 45, 0.4);
+}
+
+.rent {
+  background-color: #ffeb3b; /* Lighter yellow for rent button */
+  color: white;
+}
+
+.rent:hover {
+  background-color: #fdd835; /* Darker yellow on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 235, 59, 0.4);
+}
+
+@media (max-width: 600px) {
+  .Home-Page {
+    padding: 30px;
+  }
+
+  .Title h1 {
+    font-size: 2rem;
+  }
+
+  .Question h2 {
+    font-size: 1.2rem;
+  }
+
+  .Answer {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Optional: Add a subtle animation to the title */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Title h1 {
+  animation: fadeInUp 0.8s ease-out;
+}
