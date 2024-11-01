@@ -15,6 +15,10 @@
 }
 
 .Header-name {
+    font-size: 2rem;
+    font-weight: bold; 
+    padding-right: 50px;
+    color: whitesmoke;
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
@@ -99,4 +103,13 @@
 
 .Header_bar {
   animation: fadeInDown 0.5s ease-out;
+}
+
+#label{
+    font-size: 30px;
+    padding-right: 10px;
+    color: white;
+    position: relative;
+    bottom: 3px;
+    text-shadow: #000000ff;
 }
