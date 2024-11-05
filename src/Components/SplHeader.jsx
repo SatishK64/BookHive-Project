@@ -1,6 +1,7 @@
 import React from "react";
 import './SplHeader.css';
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 function SplHeader(){
@@ -9,16 +10,9 @@ function SplHeader(){
             <header>
                 <div className="Header_bar">
             
-                <div className="Header-name">BookHive</div>
-                <button type="button" className="Header-lend">Lend Books</button>
-                <button type="button" className="Header-rent">Rent Books</button>
-                <div className="Header-search">
-                   <div className="Search">
-                        <label id ="label" for="Search">Search</label>
-                        <input className= "Search-Bar"type="text" placeholder="  Book Name"></input>
-                        <button type="button" className="Submit-button">🔎</button>
-                    </div> 
-                </div>
+                <Link to= '/' className="hyper"><div className="Header-name">BookHive</div></Link>
+                <Link to= '/Lend' className="hyper"><button type="button" className="Header-lend">Lend Books</button></Link>
+                <Link to= '/rent' className="hyper"><button type="button" className="Header-rent">Rent Books</button></Link>
                 </div>
             </header>
         
