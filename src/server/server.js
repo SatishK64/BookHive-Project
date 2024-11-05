@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://your-vercel-domain.vercel.app', 'https://bookhive.vercel.app'] // Add your Vercel domain
+    ? ['https://book-hive-project.vercel.app/', 'https://bookhive.vercel.app'] // Add your Vercel domain
     : 'http://localhost:3000'
 }));
 
