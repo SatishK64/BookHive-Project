@@ -3,7 +3,7 @@ import { getDatabase } from 'firebase/database';
 import dotenv from 'dotenv';
 
 dotenv.config();
-
+console.log("hello firebase");
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
   authDomain: process.env.FIREBASE_AUTH_DOMAIN,
