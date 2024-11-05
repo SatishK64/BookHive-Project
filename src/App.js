@@ -1,7 +1,7 @@
 import './App.css';
 import SplHeader from './Components/SplHeader.jsx';
 import Footer from './Components/Footer.jsx';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './routes/Home.jsx';
 import Find from './routes/Find.jsx';
 import Lend from "./routes/Adder.jsx";
