@@ -1,4 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@media (max-width: 770px) {
+  .Home-Page {
+    padding: 30px;
+  }
+
+  .Title h1 {
+    font-size: 2rem;
+  }
+
+  .Question h2 {
+    font-size: 1.2rem;
+  }
+
+  .Answer {
+    font-size: 0.9rem;
+  }
+  .Back-Page{
+    position: relative;
+    border-top: 130px;
+    background: #000;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
 
 * {
   margin: 0;
@@ -96,30 +122,6 @@ button {
   box-shadow: 0 5px 15px rgba(255, 235, 59, 0.4);
 }
 
-@media (max-width: 600px) {
-  .Home-Page {
-    padding: 30px;
-  }
-
-  .Title h1 {
-    font-size: 2rem;
-  }
-
-  .Question h2 {
-    font-size: 1.2rem;
-  }
-
-  .Answer {
-    font-size: 0.9rem;
-  }
-  .Back-Page{
-    position: relative;
-  }
-  button {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
-}
 
 /* Optional: Add a subtle animation to the title */
 @keyframes fadeInUp {
