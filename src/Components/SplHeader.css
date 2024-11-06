@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 15px 30px; /* Default padding */
   background-color: #fffbe6; /* Soft light yellow background */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -15,10 +15,10 @@
 }
 
 .Header-name {
-    font-size: 2rem;
-    font-weight: bold; 
-    padding-right: 50px;
-    color: whitesmoke;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-right: 50px;
+  color: whitesmoke;
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
@@ -74,18 +74,20 @@
 
 @media (max-width: 768px) {
   .Header_bar {
-    flex-direction: column;
-    padding: 15px;
+    flex-direction: row; /* Switch to row layout */
+    padding: 5px 15px; /* Reduce padding to drastically reduce height */
   }
 
   .Header-name {
-    margin-bottom: 15px;
+    margin-bottom: 5px; /* Reduce bottom margin */
+    font-size: 1.4rem; /* Much smaller font size for the header name */
   }
 
   .Header-lend,
   .Header-rent {
-    margin: 5px;
-    width: 100%;
+    margin: 3px; /* Reduce margin around buttons */
+    padding: 6px 12px; /* Much smaller button padding */
+    font-size: 0.7rem; /* Smaller font size for buttons */
   }
 }
 
@@ -105,11 +107,11 @@
   animation: fadeInDown 0.5s ease-out;
 }
 
-#label{
-    font-size: 30px;
-    padding-right: 10px;
-    color: white;
-    position: relative;
-    bottom: 3px;
-    text-shadow: #000000ff;
+#label {
+  font-size: 30px;
+  padding-right: 10px;
+  color: white;
+  position: relative;
+  bottom: 3px;
+  text-shadow: #000000ff;
 }
