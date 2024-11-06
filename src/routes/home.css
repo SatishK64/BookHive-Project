@@ -11,11 +11,7 @@ body {
   background-color: #fffde7; /* Light yellow background */
   color: #333;
 }
-@media (max-width : 770 ){
-  .Back-page{
-    border-top: 500px ;
-  }
-}
+
 .Back-page {
   min-height: 93vh;
   display: flex;
@@ -116,7 +112,9 @@ button {
   .Answer {
     font-size: 0.9rem;
   }
-
+  .Home-Page{
+    position: relative;
+  }
   button {
     padding: 10px 20px;
     font-size: 0.9rem;
