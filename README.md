@@ -2,6 +2,8 @@
 
 BookHive is a web platform for renting and lending books, connecting book enthusiasts and enabling efficient book management. It features a searchable book catalog, a dynamic lending page, and automatic integration of book data via the Google Books API.
 
+It is currently deployed at [BookHive](https://the-book-hive.vercel.app/)
+
 ## Features
 
 - **Searchable Book Listings**: Easily search for books by title, author, or other metadata.
