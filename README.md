@@ -65,9 +65,8 @@ It is currently deployed at [BookHive](https://the-book-hive.vercel.app/)
 
 ## Usage
 
-1. **Sign Up/Login**: Create an account or log in using your credentials.
-2. **Search for Books**: Use the search bar to find books by title or author.
-3. **Lend or Borrow**: Manage your lending/borrowing activities seamlessly through the lending page.
+1. **Search for Books**: Use the search bar to find books by title or author.
+2. **Lend or Borrow**: Manage your lending/borrowing activities hassle-free through the lending page .
 
 ## Project Structure
 
