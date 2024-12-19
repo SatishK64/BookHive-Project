@@ -58,7 +58,7 @@ It is currently deployed at [BookHive](https://the-book-hive.vercel.app/)
 
 4. Start the development server:
    ```bash
-   npm start
+   npm run dev
    ```
 
 5. Visit the application at `http://localhost:3000`.
