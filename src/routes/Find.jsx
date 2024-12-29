@@ -1,22 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { initializeApp } from 'firebase/app';
-import { getDatabase, ref, get } from 'firebase/database';
+import { database } from '../server/config/firebase';
+import { ref, get } from 'firebase/database';
 import './Find.css';
 
-// Your Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyCI4TJsIhtrAvp5DRVXswGooesJPHwI58E",
-    authDomain: "bookhive-b913c.firebaseapp.com",
-    databaseURL: "https://bookhive-b913c-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "bookhive-b913c",
-    storageBucket: "bookhive-b913c.appspot.com",
-    messagingSenderId: "297104323126",
-    appId: "1:297104323126:web:ac80c412720912d2d5de97"
-  };
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
 
 const App = () => {
     const [searchQuery, setSearchQuery] = useState("");
