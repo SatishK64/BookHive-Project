@@ -4,7 +4,20 @@ import { db } from '../config/firebase.js';
 import { openai } from '../config/openai.js';
 
 const router = express.Router();
-
+router.get('/bookList', async (req,res) => {
+  try {
+    const booksRef = ref(db, 'books');
+    const snapshot = await get(booksRef);
+    if (snapshot.exists()) {
+      res.status(200).json(snapshot.val());
+    } else {
+      res.status(404).json({ error: 'No books found in database' });
+    }
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: 'Failed to fetch books' });
+  }
+});
 router.get('/books/:isbn', async (req, res) => {
   try {
     const bookRef = ref(db, `books/${req.params.isbn}`);

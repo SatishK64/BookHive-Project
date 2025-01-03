@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { database } from '../server/config/firebase';
-import { ref, get } from 'firebase/database';
 import './Find.css';
 
 
@@ -13,28 +11,47 @@ const App = () => {
     const [error, setError] = useState(null);
 
     // Fetch books from Firebase on component mount
+    // useEffect(() => {
+    //     const fetchBooks = async () => {
+    //         try {
+    //             const booksRef = ref(database, 'books');
+    //             const snapshot = await get(booksRef);
+                
+    //             if (snapshot.exists()) {
+    //                 const booksData = snapshot.val();
+    //                 setBooks(booksData);
+    //                 setFilteredBooks(Object.entries(booksData));
+    //             } else {
+    //                 setError("No books found in database");
+    //             }
+    //         } catch (err) {
+    //             setError("Error fetching books: " + err.message);
+    //         } finally {
+    //             setLoading(false);
+    //         }
+    //     };
+
+    //     fetchBooks();
+    // }, []);
+
     useEffect(() => {
         const fetchBooks = async () => {
             try {
-                const booksRef = ref(database, 'books');
-                const snapshot = await get(booksRef);
-                
-                if (snapshot.exists()) {
-                    const booksData = snapshot.val();
-                    setBooks(booksData);
-                    setFilteredBooks(Object.entries(booksData));
-                } else {
-                    setError("No books found in database");
+                const response = await fetch('/api/bookList');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch books');
                 }
+                const booksData = await response.json();
+                setBooks(booksData);
+                setFilteredBooks(Object.entries(booksData));
             } catch (err) {
                 setError("Error fetching books: " + err.message);
             } finally {
                 setLoading(false);
             }
         };
-
         fetchBooks();
-    }, []);
+    },[]);
 
     const handleSearch = (query) => {
         setSearchQuery(query);

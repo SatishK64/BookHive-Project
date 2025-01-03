@@ -12,7 +12,6 @@ const firebaseConfig = {
   messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
   appId: process.env.FIREBASE_APP_ID
 };
-
+console.log('Firebase Config:', firebaseConfig);
 const firebaseApp = initializeApp(firebaseConfig);
 export const db = getDatabase(firebaseApp);
-export const database = getDatabase(firebaseApp);
